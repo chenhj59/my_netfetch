@@ -6,7 +6,7 @@ void main(List<String> arguments) {
 }
 
 void Make_network_request() async {
-  final httpPackageUrl = Uri.http('dart.dev', '/f/packages/http.json');
+  final httpPackageUrl = Uri.http('raw.githubusercontent.com', '/chenhj59/my_netfetch/main/netfetch/bin/test.json');
   final httpPackageInfo = await http.read(httpPackageUrl);
   print(httpPackageInfo);
 }
